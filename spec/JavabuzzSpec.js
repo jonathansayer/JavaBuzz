@@ -53,12 +53,17 @@ describe('Javabuzz', function(){
     });
   });
 
-  describe('whe playing, says',function(){
+  describe('when playing, says',function(){
     it('"Buzz" when a number is divisible by 5', function(){
       expect(javabuzz.says(5)).toEqual("Buzz");
     });
   });
-  
 
+  describe('when playing, says',function(){
+    it('"JavaBuzz" when a number is divisible by 15', function(){ 
+      expect(javabuzz.says(15)).toEqual("JavaBuzz");
+    });
+  });
+  
 
 });
