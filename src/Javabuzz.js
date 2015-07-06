@@ -19,16 +19,17 @@
   };
 
   Javabuzz.prototype.says = function(number) {
-    if (this.isDivisibleByFifteen(number)){
+     if (this.isDivisibleByFifteen(number)) {
       return "JavaBuzz";
-    }  
-    if (this.isDivisibleByThree(number)) {
+    }
+    else if (this.isDivisibleByThree(number)) {
       return "Java";
     }
-    if (this.isDivisibleByFive(number)) {
+    else if (this.isDivisibleByFive(number)) {
       return "Buzz";
-    }
+    } else {
     return number;
+  }
   };
 
   // Javabuzz.prototype.says = function(number) {
